@@ -1,0 +1,30 @@
+.works {
+    padding: 20px;
+  }
+  
+  .works h1 {
+    font-size: 2em;
+  }
+  
+  .works p {
+    font-size: 1.2em;
+  }
+  
+  .works ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .works ul li {
+    margin: 10px 0;
+  }
+  
+  .works ul li a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .works ul li a:hover {
+    text-decoration: underline;
+  }
+  
