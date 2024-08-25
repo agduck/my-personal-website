@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Sidebar.css'; // Ensure you have this CSS file
+import { FaLinkedin, FaFileAlt } from 'react-icons/fa'; // Import icons from react-icons
+import './Sidebar.css';
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h1 className="sidebar-name">Your Name</h1>
+      <div className="sidebar-rectangle"></div>
+      <h1 className="sidebar-name">Andrew Duckworth</h1>
       <div className="sidebar-jobs">
-        <h2>Job Title 1</h2>
-        <h2>Job Title 2</h2>
-        {/* Add more job titles as needed */}
+        <h2>Software Developer</h2>
+        <h2>Graphic Designer</h2>
       </div>
       <nav className="sidebar-menu">
         <ul>
@@ -18,6 +19,16 @@ const Sidebar = () => {
           <li><Link to="/works">Works</Link></li>
         </ul>
       </nav>
+      <div className="sidebar-icons">
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <FaLinkedin size={24} />
+        </a>
+        <a href="/path/to/your-cv.pdf" target="_blank" rel="noopener noreferrer" aria-label="CV">
+          <FaFileAlt size={24} />
+        </a>
+      </div>
+      <p className="sidebar-copyright">&copy; 2024 Andrew Duckworth</p>
+      <p className="sidebar-credits">Website created from the ground up by Andrew Duckworth.</p>
     </div>
   );
 };
