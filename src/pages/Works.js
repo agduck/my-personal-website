@@ -2,13 +2,21 @@ import React from 'react';
 import './Works.css';
 
 const Works = () => {
+  const projects = [
+    { title: "Omaha Jazz Festival Poster Redesign", link: "/works/project1", description: "A poster redesign project for the Omaha Jazz Festival." },
+    { title: "Project 2", link: "/works/project2", description: "A brief description of Project 2." },
+    { title: "Project 3", link: "/works/project3", description: "A brief description of Project 3." },
+  ];
+
   return (
     <div className="works">
-      <ul>
-        <li><a href="/works/project1">Omaha Jazz Festival Poster Redesign</a></li>
-        <li><a href="/works/project2">Project 2</a></li>
-        <li><a href="/works/project3">Project 3</a></li>
-      </ul>
+      {projects.map((project, index) => (
+        <a href={project.link} key={index} className="project-card">
+          <div className="card-header"></div>
+          <h2 className="project-title">{project.title}</h2>
+          <p className="project-description">{project.description}</p>
+        </a>
+      ))}
     </div>
   );
 };

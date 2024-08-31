@@ -1,12 +1,36 @@
 .home {
-    padding: 20px;
-  }
-  
-  .home h1 {
-    font-size: 2em;
-  }
-  
-  .home p {
-    font-size: 1.2em;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 150px;
+}
+
+.home-content {
+  max-width: 60%;
+}
+
+.home h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.home p {
+  font-size: 1.2em;
+  margin-top: 0;
+  text-align: left;
+  max-width: 500px;
+}
+
+.home-rectangles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rectangle {
+  background-color: #ccc;
+  border-radius: 8px;
+  width: 200px;
+  height: 100px;
+}

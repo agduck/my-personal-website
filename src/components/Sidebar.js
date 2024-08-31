@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaLinkedin, FaFileAlt } from 'react-icons/fa'; // Import icons from react-icons
+import { FaLinkedin, FaFileAlt } from 'react-icons/fa';
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -20,10 +20,10 @@ const Sidebar = () => {
         </ul>
       </nav>
       <div className="sidebar-icons">
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/andrewgduckworth" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <FaLinkedin size={24} />
         </a>
-        <a href="/path/to/your-cv.pdf" target="_blank" rel="noopener noreferrer" aria-label="CV">
+        <a href="./andrew-duckworth-resume-720.pdf" target="_blank" rel="noopener noreferrer" aria-label="CV">
           <FaFileAlt size={24} />
         </a>
       </div>

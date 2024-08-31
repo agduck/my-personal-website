@@ -1,30 +1,44 @@
 .works {
-    padding: 20px;
-  }
-  
-  .works h1 {
-    font-size: 2em;
-  }
-  
-  .works p {
-    font-size: 1.2em;
-  }
-  
-  .works ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .works ul li {
-    margin: 10px 0;
-  }
-  
-  .works ul li a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .works ul li a:hover {
-    text-decoration: underline;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  text-decoration: none;
+  color: inherit;
+  width: 80%;
+  max-width: 1000px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  background-color: #ccc;
+  border-radius: 8px;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.project-title {
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.project-description {
+  font-size: 1.2em; 
+  color: #555;
+  text-align: left;
+}
