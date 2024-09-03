@@ -4,60 +4,133 @@
     left: 0;
     width: 250px;
     height: 100%;
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #3B3b3b;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .sidebar-rectangle {
-    width: 200px;
-    height: 50px;
-    background-color: grey;
-    border-radius: 10px;
+.topbar {
+    position: fixed;
+    top: 0px;
+    left: 300px;
+    width: calc(100% - 250px);
+    height: 160px;
+    background-color: #fff;
+    color: #3B3b3b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    margin-left: 15px;
+    z-index: 1000;
+}
+
+.topbar-name {
+    font-size: 24pt;
+    font-family: 'Baskerville', serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #3B3b3b;
+    margin: 0;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.topbar-jobs {
+    font-size: 10pt;
+    font-family: 'Baskerville', serif;
+    font-weight: 600;
+    font-style: italic;
+    color: #3B3b3b;
+    margin-top: -15px;
+    text-align: left;
+}
+
+.sidebar-rectangle {
+    width: 250px;
+    height: 100px;
+    background-color: #3B3b3b;
+    border-radius: 15px;
     margin: 0 auto 20px;
-  }
-  
-  .sidebar-name {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-  }
-  
-  .sidebar-jobs h2 {
-    font-size: 1.2em;
-    margin: 10px 0;
-  }
-  
-  .sidebar-menu ul {
+    padding-left: 15px;
+    margin-left: 15px;
+}
+
+.sidebar-menu ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .sidebar-menu ul li {
-    margin: 15px 0;
-  }
-  
-  .sidebar-menu ul li a {
-    color: #fff;
+    text-align: left;
+    font-size: 14pt;
+    font-family: 'Baskerville', serif;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.sidebar-menu ul li {
+    margin: 35px 0;
+    padding-left: 5px;
+    position: relative;
+}
+
+.sidebar-menu ul li a {
+    color: #3B3b3b;
     text-decoration: none;
     font-size: 1.1em;
-  }
-  
-  .sidebar-menu ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .sidebar-icons {
+    display: block;
+    padding-right: 30px;
+}
+
+.sidebar-menu ul li:hover::after {
+    content: "<";
+    position: absolute;
+    right: 135px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3B3b3b;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+.sidebar-icons {
     margin-top: 20px;
     display: flex;
-    justify-content: space-around;
-  }
-  
-  .sidebar-icons a {
-    color: black; 
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 15px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #3B3b3b;
+    color: #fff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14pt;
+    font-weight: bold;
     text-decoration: none;
-  }
-  
-  .sidebar-icons a:hover {
-    color: #0077b5;
-  }
+}
+
+.icon:hover {
+    background-color: #aaa;
+}
+
+.sidebar-copyright {
+    font-size: 10pt;
+    text-align: left;
+    font-family: 'Inria Serif', serif;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.sidebar-credits {
+    font-size: 8pt;
+    text-align: left;
+    max-width: 200px;
+    font-family: 'Inria Serif', serif;
+    font-weight: bold;
+    padding-left: 15px;
+}
