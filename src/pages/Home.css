@@ -1,8 +1,9 @@
 .home {
+  margin-top: 100px; 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 20px;
-  margin-left: 150px;
+  margin-left: 50px;
 }
 
 .home-content {
@@ -10,27 +11,29 @@
 }
 
 .home h1 {
-  font-size: 2em;
+  font-size: 24pt;
   margin-bottom: 10px;
   text-align: left;
 }
 
 .home p {
-  font-size: 1.2em;
+  font-size: 14pt;
   margin-top: 0;
   text-align: left;
   max-width: 500px;
 }
 
-.home-rectangles {
+/* Rectangle styling */
+.home-rectangle {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  align-items: flex-start;
+  margin-left: 100px;
+  margin-top: 30px;
 }
 
-.rectangle {
+.home-rectangle .rectangle {
   background-color: #ccc;
-  border-radius: 8px;
-  width: 200px;
-  height: 100px;
+  border-radius: 10px;
+  width: 400px;
+  height: 550px;
 }

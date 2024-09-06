@@ -8,10 +8,8 @@ const Home = () => {
         <h1>Hey, I'm Andrew</h1>
         <p>I’m a software developer and graphic designer based in Omaha, Nebraska. Explore my work and feel free to get in touch with me!</p>
       </div>
-      <div className="home-rectangles">
-        {[...Array(5)].map((_, index) => (
-          <div key={index} className="rectangle"></div>
-        ))}
+      <div className="home-rectangle">
+        <div className="rectangle"></div>
       </div>
     </div>
   );
