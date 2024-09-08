@@ -3,9 +3,9 @@ import './Works.css';
 
 const Works = () => {
   const projects = [
-    { title: "Project 3", link: "/works/project3", description: "A brief description of Project 3." },
-    { title: "Project 2", link: "/works/project2", description: "A brief description of Project 2." },
-    { title: "Omaha Jazz Festival Poster Redesign", link: "/works/project1", description: "A poster redesign project for the Omaha Jazz Festival." },
+    { title: "Kaizen", link: "/works/project3", description: "Reinventing healthcare architecture." },
+    { title: "Digital Air Rights", link: "/works/project2", description: "Claim. Protect. Prosper." },
+    { title: "Omaha Jazz Festival Poster Redesign", link: "/works/project1", description: "A modern redesign of the Omaha Jazz Fest posters utilizing vibrant colors to capture the energy and spirit of the event." },
   ];
 
   return (

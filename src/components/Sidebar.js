@@ -16,7 +16,9 @@ const Sidebar = () => {
 
       {/* Sidebar */}
       <div className="sidebar">
-        <div className="sidebar-rectangle"></div>
+      <div className="sidebar-rectangle">
+        </div>
+
         <nav className="sidebar-menu">
           <ul>
             <li><Link to="/">Home</Link></li>
