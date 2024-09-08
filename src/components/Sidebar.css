@@ -72,25 +72,52 @@
     position: relative;
 }
 
+/* Style for the menu link and arrow */
 .sidebar-menu ul li a {
     color: #3B3b3b;
     text-decoration: none;
     font-size: 1.1em;
     display: block;
     padding-right: 30px;
+    position: relative;
 }
 
-.sidebar-menu ul li:hover::after {
+.sidebar-menu ul li {
+    margin: 35px 0;
+    padding-left: 5px;
+    position: relative;
+}
+
+/* Arrow with floating animation */
+.sidebar-menu ul li a::after {
     content: "<";
+    opacity: 0;
     position: absolute;
     right: 135px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(-20px);
     color: #3B3b3b;
     font-size: 1.2em;
     font-weight: bold;
-    margin-left: 100px;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
+
+.sidebar-menu ul li:hover a::after {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+    animation: float 1.5s ease-in-out infinite;
+}
+
+/* Floating animation with left-to-right movement */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(-50%) translateX(0); /* Start and end position */
+    }
+    50% {
+        transform: translateY(-50%) translateX(10px); /* Move to the right */
+    }
+}
+
 
 .sidebar-icons {
     margin-top: 20px;

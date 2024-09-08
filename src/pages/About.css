@@ -1,38 +1,59 @@
 .about {
+  padding: 20px;
+  margin-left: 50px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content-container {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  margin-left: 150px;
+  align-items: flex-start;
 }
 
 .about-content {
   max-width: 60%;
+  color: #3B3b3b;
 }
 
 .about h1 {
-  font-size: 2em;
+  font-size: 24pt;
   margin-bottom: 15px;
   text-align: left;
 }
 
 .about p {
-  font-size: 1.2em;
+  font-size: 14pt;
   margin-top: 0;
   margin-bottom: 20px;
   text-align: left;
   max-width: 700px;
 }
 
-.about-rectangles {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* Rectangle styling */
+.about-rectangle {
+  margin-left: 100px;
+  margin-top: 30px;
 }
 
 .rectangle {
   background-color: #ccc;
-  border-radius: 8px;
-  width: 200px;
-  height: 100px;
+  border-radius: 10px;
+  width: 400px;
+  height: 550px;
 }
 
+/* Squares styling */
+.about-squares {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.square {
+  background-color: #ccc;
+  width: 325px;
+  height: 325px;
+  border-radius: 10px;
+}
