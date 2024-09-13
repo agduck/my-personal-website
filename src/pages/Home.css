@@ -1,5 +1,11 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #F4F4E2;
+}
+
 .home {
-  margin-top: 100px; 
+  margin-top: 100px;
   display: flex;
   justify-content: flex-start;
   padding: 20px;
@@ -37,4 +43,44 @@
   border-radius: 10px;
   width: 400px;
   height: 550px;
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  .home-content {
+    max-width: 80%;
+    text-align: center;
+  }
+
+  .home-rectangle {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .home-rectangle .rectangle {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .home {
+    margin-top: 80px;
+    padding: 10px;
+  }
+
+  .home-content {
+    max-width: 100%;
+    text-align: center;
+  }
 }

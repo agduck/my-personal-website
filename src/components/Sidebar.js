@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaLinkedin, FaFileAlt } from 'react-icons/fa';
 import './Sidebar.css';
 
 const Sidebar = () => {

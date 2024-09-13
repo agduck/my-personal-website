@@ -1,3 +1,9 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #F4F4E2;
+}
+
 .about {
   padding: 20px;
   margin-left: 50px;
@@ -15,25 +21,24 @@
 .about-content {
   max-width: 60%;
   color: #3B3b3b;
+  text-align: left;
 }
 
 .about h1 {
   font-size: 24pt;
   margin-bottom: 15px;
-  text-align: left;
 }
 
 .about p {
   font-size: 14pt;
   margin-top: 0;
   margin-bottom: 20px;
-  text-align: left;
   max-width: 700px;
 }
 
-/* Rectangle styling */
+/* Rectangle and Squares Styling */
 .about-rectangle {
-  margin-left: 100px;
+  margin-right: 300px;
   margin-top: 30px;
 }
 
@@ -44,10 +49,10 @@
   height: 550px;
 }
 
-/* Squares styling */
 .about-squares {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 50px;
 }
 
@@ -57,3 +62,66 @@
   height: 325px;
   border-radius: 10px;
 }
+
+/* Media Queries */
+
+/* Tablets and Larger Phones */
+@media (max-width: 1024px) {
+  .about {
+    margin-left: 20px;
+  }
+
+  .about-content {
+    max-width: 80%;
+  }
+
+  .about-rectangle {
+    margin-left: 100px;
+    margin-top: 30px; /* Adjust spacing */
+  }
+
+  .rectangle {
+    width: 300px;
+    height: 450px;
+  }
+
+  .about-squares {
+    margin-top: 30px;
+  }
+
+  .square {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  .about {
+    margin-top: 80px;
+    padding: 10px;
+  }
+
+  .about-content-container {
+    flex-direction: column; /* Stack em */
+    align-items: center;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .about-squares {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .square {
+    width: 80%;
+    max-width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+}
+
