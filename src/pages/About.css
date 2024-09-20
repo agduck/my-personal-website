@@ -125,3 +125,9 @@ body, html {
   }
 }
 
+.email-link {
+  text-decoration: underline;
+  color: inherit;
+}
+
+

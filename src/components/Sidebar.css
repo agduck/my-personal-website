@@ -47,14 +47,23 @@
 }
 
 .sidebar-rectangle {
+    border: 2px solid #3b3b3b;
+    border-radius: 10px;
+    position: relative;
     width: 250px;
     height: 100px;
-    background-color: #3B3b3b;
-    border-radius: 15px;
-    margin: 0 auto 20px;
-    padding-left: 15px;
-    margin-left: 15px;
-}
+    overflow: hidden;
+  }
+  
+  #res-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
 
 .sidebar-menu ul {
     list-style: none;
@@ -64,6 +73,7 @@
     font-family: 'Baskerville', serif;
     font-weight: 600;
     padding-left: 15px;
+    padding-top: 2px;
 }
 
 .sidebar-menu ul li {
@@ -72,7 +82,6 @@
     position: relative;
 }
 
-/* Style for the menu link and arrow */
 .sidebar-menu ul li a {
     color: #3B3b3b;
     text-decoration: none;
@@ -82,13 +91,6 @@
     position: relative;
 }
 
-.sidebar-menu ul li {
-    margin: 35px 0;
-    padding-left: 5px;
-    position: relative;
-}
-
-/* Arrow with floating animation */
 .sidebar-menu ul li a::after {
     content: "<";
     opacity: 0;
@@ -99,7 +101,7 @@
     color: #3B3b3b;
     font-size: 1.2em;
     font-weight: bold;
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .sidebar-menu ul li:hover a::after {
@@ -108,16 +110,14 @@
     animation: float 1.5s ease-in-out infinite;
 }
 
-/* Floating animation with left-to-right movement */
 @keyframes float {
     0%, 100% {
-        transform: translateY(-50%) translateX(0); /* Start and end position */
+        transform: translateY(-50%) translateX(0);
     }
     50% {
-        transform: translateY(-50%) translateX(10px); /* Move to the right */
+        transform: translateY(-50%) translateX(10px);
     }
 }
-
 
 .sidebar-icons {
     margin-top: 20px;
@@ -161,3 +161,4 @@
     font-weight: bold;
     padding-left: 15px;
 }
+

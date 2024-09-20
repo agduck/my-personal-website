@@ -8,10 +8,11 @@ const About = () => {
         <div className="about-content">
           <h1>Who I am, What I am, & Why I am</h1>
           <p>
-            I’m Andrew Duckworth, a developer and designer. I was born in Ames, Iowa, but have lived most of my life in Omaha, Nebraska. When I’m not developing, you will either find me strength training in the gym or watching movies with what some would call too much focus. Recently I have embarked on a lengthy project of creating my own video game, although I’m still in the early stages on that. I specialize in work that I have either have personal passion about or work that benefits marginalized groups. I bring a unique perspective to any project I am on along with adaptability in skills both hard and soft.
-            <br />
-            <br />
-            Growing up I always thought I’d be a psychologist of some sort. The intricacies of people, how they work, how they think, how they make decisions was always the most interesting concept to me. I was also invested in technology, although I never expected to pursue that as a career. Near the end of high school I began to learn basic programming concepts and decided to major in computer science. I then discovered design, incorporating my love of interaction design into my programs. I graduated in 2024 cum laude with two bachelor degrees, one in graphic design and one in computer science. Looking to the future, I hope to design and develop on projects that challenge me, allow me to learn concepts I could not anywhere else, and help those who are in need of my skill set.
+              While I was born in Ames, IA, I’ve lived most of my life in Omaha, NE. I have an eye for creative approaches to issues as well as a curiosity towards how things are built digitally. With a background equal parts design and development, I can deliver thorough design solutions to clients. 
+            <br /><br />
+            Whenever I am neither designing nor developing, I can be found strength training at the gym, watching movies with probably too much focus, or slowly, slowly working on a game I am developing. 
+            <br /><br />
+            Want to chat? Send me an email at <a href="mailto:andrewgduckworth@icloud.com" className="email-link">andrewgduckworth@icloud.com</a>
           </p>
         </div>
 
@@ -32,3 +33,4 @@ const About = () => {
 };
 
 export default About;
+

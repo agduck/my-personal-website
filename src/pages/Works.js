@@ -5,7 +5,10 @@ const Works = () => {
   const projects = [
     { title: "Kaizen", description: "Reinventing healthcare architecture.", image: "/kaizen.png" },
     { title: "Digital Air Rights", description: "Claim. Protect. Prosper.", image: "/DAR.png" },
-    { title: "Omaha Jazz Festival Poster Redesign", link: "/works/project1", description: "A modern redesign of the Omaha Jazz Fest posters utilizing vibrant colors to capture the energy and spirit of the event.", image: "/jazz-festival-image.png" },
+    { title: "Omaha Jazz Festival Poster Redesign", 
+      link: "/PORTFOLIO_P1.pdf", 
+      description: "A modern redesign of the Omaha Jazz Fest posters utilizing vibrant colors to capture the energy and spirit of the event.", 
+      image: "/PORTFOLIO_P1.png" },
   ];
 
   return (

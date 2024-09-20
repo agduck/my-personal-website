@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { setupCanvas, animate } from './animation';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
 const Sidebar = () => {
+  useEffect(() => {
+    setupCanvas();
+    animate();
+  }, []);
+
   return (
     <div>
       {/* Top Bar */}
@@ -15,7 +21,8 @@ const Sidebar = () => {
 
       {/* Sidebar */}
       <div className="sidebar">
-      <div className="sidebar-rectangle">
+        <div className="sidebar-rectangle">
+          <canvas id="res-canvas"></canvas>
         </div>
 
         <nav className="sidebar-menu">
@@ -34,7 +41,7 @@ const Sidebar = () => {
           </a>
         </div>
         <p className="sidebar-copyright">&copy; 2024 Andrew Duckworth</p>
-        <p className="sidebar-credits">Website created <br></br> from the ground up <br></br> by Andrew Duckworth.</p>
+        <p className="sidebar-credits">Website created <br /> from the ground up <br /> by Andrew Duckworth.</p>
       </div>
     </div>
   );
