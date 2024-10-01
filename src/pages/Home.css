@@ -1,86 +1,89 @@
+/* General Styles */
 body, html {
-  height: 100%;
-  margin: 0;
-  background-color: #F4F4E2;
-}
-
-.home {
-  margin-top: 100px;
-  display: flex;
-  justify-content: flex-start;
-  padding: 20px;
-  margin-left: 50px;
-}
-
-.home-content {
-  max-width: 60%;
-  color: #3B3b3b;
-}
-
-.home h1 {
-  font-size: 24pt;
-  margin-bottom: 10px;
-  text-align: left;
-}
-
-.home p {
-  font-size: 14pt;
-  margin-top: 0;
-  text-align: left;
-  max-width: 500px;
-}
-
-/* Rectangle styling */
-.home-rectangle {
-  display: flex;
-  align-items: flex-start;
-  margin-left: 100px;
-  margin-top: 30px;
-}
-
-.home-rectangle .rectangle {
-  background-color: #ccc;
-  border-radius: 10px;
-  width: 400px;
-  height: 550px;
-}
-
-/* Media Queries */
-
-/* Tablets */
-@media (max-width: 1024px) {
+    height: 100%;
+    margin: 0;
+    background-color: #F4F4E2;
+  }
+  
   .home {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    margin-left: 0;
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-left: 50px;
   }
-
+  
   .home-content {
-    max-width: 80%;
-    text-align: center;
+    max-width: 60%;
+    color: #3B3b3b;
   }
-
+  
+  .home h1 {
+    font-size: 24pt;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .home p {
+    font-size: 14pt;
+    margin-top: 0;
+    text-align: left;
+    max-width: 500px;
+  }
+  
+  /* Rectangle styling */
   .home-rectangle {
-    margin-left: 0;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 100px;
     margin-top: 30px;
   }
-
+  
   .home-rectangle .rectangle {
-    width: 300px;
-    height: 400px;
+    background-color: #ccc;
+    border-radius: 10px;
+    width: 400px;
+    height: 533px; /* Updated height for 3:4 aspect ratio */
   }
-}
-
-/* Phones */
-@media (max-width: 768px) {
-  .home {
-    margin-top: 80px;
-    padding: 10px;
+  
+  /* Media Queries */
+  
+  /* Tablets (1024px and below) */
+  @media (max-width: 1024px) {
+    .home {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      margin-left: 0;
+      margin-top: 120px; /* Increased margin-top for tablets to lower content */
+    }
+  
+    .home-content {
+      max-width: 90%;
+      text-align: center; /* Center text for better readability on tablets */
+    }
+  
+    .home h1 {
+      font-size: 22pt; /* Slightly smaller for tablets */
+    }
+  
+    .home p {
+      font-size: 13pt; /* Adjust font size */
+    }
+  
+    .home-rectangle {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .home-rectangle .rectangle {
+      width: 350px; /* Smaller rectangle for tablets */
+      height: 467px; /* Adjusted for 3:4 aspect ratio */
+    }
   }
-
-  .home-content {
-    max-width: 100%;
-    text-align: center;
+  
+  .email-link {
+    text-decoration: underline;
+    color: #3B3b3b; /* Change back to the desired color */
   }
-}
+  

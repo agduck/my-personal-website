@@ -33,10 +33,22 @@ const Sidebar = () => {
           </ul>
         </nav>
         <div className="sidebar-icons">
-          <a href="https://www.linkedin.com/in/andrewgduckworth" target="_blank" rel="noopener noreferrer" className="icon" aria-label="LinkedIn">
+          <a 
+            href="https://www.linkedin.com/in/andrewgduckworth" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="icon" 
+            aria-label="LinkedIn"
+          >
             in
           </a>
-          <a href="./andrew-duckworth-resume-720.pdf" target="_blank" rel="noopener noreferrer" className="icon" aria-label="CV">
+          <a 
+            href="./andrew-duckworth-resume-720.pdf" // Adjust this path if necessary
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="icon" 
+            aria-label="CV"
+          >
             cv
           </a>
         </div>

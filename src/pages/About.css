@@ -1,3 +1,4 @@
+/* General Styles */
 body, html {
   height: 100%;
   margin: 0;
@@ -5,129 +6,108 @@ body, html {
 }
 
 .about {
-  padding: 20px;
-  margin-left: 50px;
   margin-top: 100px;
   display: flex;
-  flex-direction: column;
-}
-
-.about-content-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  margin-left: 50px;
+  flex-direction: row; /* Keep this as row for larger screens */
 }
 
 .about-content {
   max-width: 60%;
   color: #3B3b3b;
-  text-align: left;
 }
 
 .about h1 {
   font-size: 24pt;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 
 .about p {
   font-size: 14pt;
   margin-top: 0;
-  margin-bottom: 20px;
-  max-width: 700px;
+  text-align: left;
+  max-width: 500px;
 }
 
-/* Rectangle and Squares Styling */
+/* Rectangle container styling */
+.rectangle-container {
+  display: flex;
+  flex-direction: column; /* Stack rectangle and arrows vertically */
+  align-items: center; /* Center align the contents */
+  margin-left: 100px; /* Adjust left margin */
+  margin-top: 30px; /* Adjust top margin */
+}
+
 .about-rectangle {
-  margin-right: 300px;
-  margin-top: 30px;
+  display: flex;
+  justify-content: center; /* Center the rectangle */
 }
 
-.rectangle {
+.about-rectangle .rectangle {
   background-color: #ccc;
   border-radius: 10px;
   width: 400px;
-  height: 550px;
-}
-
-.about-squares {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 50px;
-}
-
-.square {
-  background-color: #ccc;
-  width: 325px;
-  height: 325px;
-  border-radius: 10px;
+  height: 533px; /* Updated height for 3:4 aspect ratio */
 }
 
 /* Media Queries */
 
-/* Tablets and Larger Phones */
+/* Tablets (1024px and below) */
 @media (max-width: 1024px) {
   .about {
-    margin-left: 20px;
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: center; /* Center align all children */
+    padding: 15px;
+    margin-left: 0;
+    margin-top: 120px; /* Increased margin-top for tablets to lower content */
   }
 
   .about-content {
-    max-width: 80%;
+    max-width: 90%;
+    text-align: center; /* Center text for better readability on tablets */
   }
 
-  .about-rectangle {
-    margin-left: 100px;
-    margin-top: 30px; /* Adjust spacing */
+  .about h1 {
+    font-size: 22pt; /* Slightly smaller for tablets */
   }
 
-  .rectangle {
-    width: 300px;
-    height: 450px;
+  .about p {
+    font-size: 13pt; /* Adjust font size */
   }
 
-  .about-squares {
-    margin-top: 30px;
+  .rectangle-container {
+    margin-left: 0;
+    margin-top: 20px; /* Adjust margin as needed */
   }
 
-  .square {
-    width: 250px;
-    height: 250px;
-  }
-}
-
-/* Phones */
-@media (max-width: 768px) {
-  .about {
-    margin-top: 80px;
-    padding: 10px;
-  }
-
-  .about-content-container {
-    flex-direction: column; /* Stack em */
-    align-items: center;
-  }
-
-  .about-content {
-    max-width: 100%;
-  }
-
-  .about-squares {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-
-  .square {
-    width: 80%;
-    max-width: 300px;
-    height: 300px;
-    margin-bottom: 20px;
+  .about-rectangle .rectangle {
+    width: 350px; /* Smaller rectangle for tablets */
+    height: 467px; /* Adjusted for 3:4 aspect ratio */
   }
 }
 
 .email-link {
   text-decoration: underline;
-  color: inherit;
+  color: #3B3b3b; /* Change back to the desired color */
 }
 
+.arrow-container {
+  display: flex;
+  justify-content: center; /* Center arrows below the rectangle */
+  margin-top: 10px; /* Adjust spacing as needed */
+}
 
+.arrow {
+  font-size: 24px; /* Adjust size as needed */
+  color: #3b3b3b;
+  margin: 0 20px; /* Space between arrows */
+  cursor: pointer; /* Indicate that arrows are clickable */
+  transition: color 0.3s;
+}
+
+.arrow:hover {
+  color: #007BFF; /* Change color on hover */
+}

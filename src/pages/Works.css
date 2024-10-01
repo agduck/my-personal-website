@@ -1,3 +1,4 @@
+/* General Styles */
 body, html {
   height: 100%;
   margin: 0;
@@ -21,7 +22,6 @@ body, html {
   color: inherit;
   width: 80%;
   max-width: 1000px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   transition: transform 0.2s;
   margin: 0 auto;
 }
@@ -61,3 +61,28 @@ body, html {
   text-align: left;
 }
 
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .works {
+    padding: 15px;
+    margin-top: 100px; /* Adjust margin for tablets */
+  }
+
+  .project-card {
+    width: 90%; /* Slightly wider for tablets */
+  }
+
+  .card-header {
+    height: 400px; /* Adjust height for card header */
+  }
+
+  .project-title {
+    font-size: 1.8em; /* Slightly smaller title */
+  }
+
+  .project-description {
+    font-size: 1em; /* Slightly smaller description */
+  }
+}

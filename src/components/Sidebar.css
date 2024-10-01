@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 20px;
-    margin-left: 15px;
+    margin-left: -25px;
     z-index: 1000;
 }
 
@@ -33,7 +33,7 @@
     color: #3B3b3b;
     margin: 0;
     text-align: left;
-    margin-left: 5px;
+    margin-left: 50px;
 }
 
 .topbar-jobs {
@@ -44,6 +44,7 @@
     color: #3B3b3b;
     margin-top: -15px;
     text-align: left;
+    margin-left: 45px;
 }
 
 .sidebar-rectangle {
@@ -125,6 +126,7 @@
     justify-content: flex-start;
     gap: 10px;
     padding-left: 15px;
+    padding-top: 14px;
 }
 
 .icon {
@@ -161,4 +163,3 @@
     font-weight: bold;
     padding-left: 15px;
 }
-
